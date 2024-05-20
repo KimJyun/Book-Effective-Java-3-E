@@ -36,13 +36,11 @@ Color color_black = Color.valueOf("BLACK");
 				else return new Advanced();
 			}
 		}
-```
+		```
 
 4. 객체 생성을 캡슐화 할 수 있음
 	- 자유롭게 형 변환 가능
-		- DTO `&leftarrow;` Entity
-		- Entity `&leftarrow;`DTO
-		
+		- DTO &harr; Entity
 			```java
 			public class MemberDto {
 				private String name;
@@ -51,7 +49,7 @@ Color color_black = Color.valueOf("BLACK");
 					return new MemberDto(member.getName(), member.getAge());
 				}
 			}
-```
+			```
 
 ### 정적 팩토리 메서드 네이밍 컨벤션
 - `from` : 하나의 매개 변수를 받아서 객체를 생성
